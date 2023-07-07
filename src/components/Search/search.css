@@ -1,0 +1,12 @@
+.contentSearch{
+  margin: 20px 0;
+  justify-content: center;
+}
+.inputSearch{
+  width: 50%;
+  height: 25%;
+}
+.buttonSearch{
+  height: 25%;
+  margin-top: 0;
+}

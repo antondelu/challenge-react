@@ -1,0 +1,51 @@
+.contentButton{
+  display: flex;
+  justify-content: center;
+}
+.btnLogin {
+  width: 180px;
+  height: 50px;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #040f16;
+  background-color: rgba(11, 7, 7, 0.07);
+  cursor: pointer;
+  padding: 15px 0;
+}
+
+.btnLogin .iconLogin {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.btnLogin .text {
+  transform: translateX(55px);
+}
+
+.btnLogin:hover .iconLogin {
+  width: 175px;
+}
+
+.btnLogin:hover .text {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.btnLogin:focus {
+  outline: none;
+}
+
+.btnLogin:active .iconLogin {
+  transform: scale(0.85);
+}

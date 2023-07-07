@@ -1,0 +1,5 @@
+.deleteButton , .updateButton{
+  width: 70px;
+  height: 37px;
+  margin: 15px 2px;
+}

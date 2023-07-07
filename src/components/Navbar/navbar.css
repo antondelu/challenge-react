@@ -1,0 +1,14 @@
+.iconAlertsActives{
+  margin-right: 25px;
+}
+.navbar {
+  background: transparent !important;
+  transition: background 0.35s ease-in-out;
+  top: 0;
+}
+.navbar.active {
+  background-color: rgb(16, 15, 15, 0.8) !important;
+}
+.navbar strong {
+  color: rgb(180, 180, 28);
+}
