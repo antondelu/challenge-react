@@ -4,10 +4,9 @@ import { InitialContext } from "../Context/Context";
 import { Button, Form } from "react-bootstrap";
 
 export const Search = ({ setAlertFilter }) => {
-  const [userSearch, setUserSearch] = useState([]);
   const { alerts } = useContext(InitialContext);
 
-  function filterSearchUser() {
+  function filterSearchUser(userSearch) {
     const search = alerts.filter(
       (search) => search.name.toUpperCase() === userSearch.toUpperCase()
     );
@@ -18,7 +17,6 @@ export const Search = ({ setAlertFilter }) => {
       className="d-flex contentSearch"
       onSubmit={(e) => {
         e.preventDefault();
-        filterSearchUser();
       }}
     >
       <Form.Control
@@ -26,7 +24,9 @@ export const Search = ({ setAlertFilter }) => {
         placeholder="Ingresar nombre de alerta"
         className="me-2 inputSearch"
         aria-label="Search"
-        onChange={(e) => setUserSearch(e.target.value)}
+        onChange={(e) => {
+          filterSearchUser(e.target.value)
+          }}
       />
       {/* <Button
         variant="outline-success"

@@ -53,7 +53,7 @@ export const DataTable = () => {
         {alertFilter.length !== 0
           ? alertFilter.map((alert) => {
               return (
-                <tbody>
+                <tbody key={alert.id}>
                   <tr>
                     <td>{alert.id}</td>
                     <td>{alert.name}</td>
@@ -85,7 +85,7 @@ export const DataTable = () => {
           : alerts.length !== 0 &&
             alerts.map((alert) => {
               return (
-                <tbody>
+                <tbody key={alert.id}>
                   <tr>
                     <td>{alert.id}</td>
                     <td>{alert.name}</td>
