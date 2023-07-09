@@ -1,5 +1,6 @@
 import "./dataTable.css";
 import "../Search/search.css";
+import axios from "axios";
 import { useContext, useState } from "react";
 import { InitialContext } from "../Context/Context";
 import { Search } from "../Search/Search";
@@ -34,7 +35,10 @@ export const DataTable = () => {
   // function deleteAlert(id) {
   //   axios
   //     .delete(`${URL}/${id}`)
-  //     .then((response) => console.log("status:" + " " + response.status));
+  //     .then((response) => console.log("status:" + " " + response.status))
+  //     .catch((error) =>
+  //       console.error("Error en methodo delete:" + " " + error.response.data)
+  //     );
   // }
 
   return (

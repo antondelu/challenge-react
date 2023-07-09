@@ -12,7 +12,10 @@ export const ProviderContextComponent = ({ children }) => {
   useEffect(() => {
     axios.get(URL).then((response) => {
       setAlerts(response.data);
-    });
+    })
+    .catch((error)=>{
+      console.error("Error en el llamado a las alertas: " + " " + error.response.data)
+    })
   }, []);
 
   useEffect(() => {

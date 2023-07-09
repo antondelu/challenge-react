@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <ProviderContextComponent>
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route element={<ProtectedRoute />}>
             <Route path="/home" element={<HomeAdmin />} />
           </Route>

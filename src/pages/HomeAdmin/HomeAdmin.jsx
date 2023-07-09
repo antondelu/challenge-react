@@ -4,8 +4,7 @@ import { DataTable } from "../../components/DataTable/DataTable";
 import { NavbarTop } from "../../components/Navbar/Navbar";
 import { SideNavbar } from "../../components/Sidebar/Sidebar";
 
-export const HomeAdmin = () => {
-  return (
+export const HomeAdmin = () => (
     <>
       <NavbarTop />
       <div className="home">
@@ -17,4 +16,4 @@ export const HomeAdmin = () => {
       </div>
     </>
   );
-};
+

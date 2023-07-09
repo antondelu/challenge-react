@@ -4,54 +4,54 @@ import handlerMsgErr from "../SweetAlerts/handlerMsgErr";
 
 export const SideNavbar = () => {
   return (
-    <div class="sidebar sidebar-show">
-      <ul class="sidebar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#containerTable">
-            <i class="nav-icon cil-speedometer"></i> Alertas
+    <div className="sidebar sidebar-show">
+      <ul className="sidebar-nav">
+        <li className="nav-item">
+          <a className="nav-link" href="#containerTable">
+            <i className="nav-icon cil-speedometer"></i> Alertas
           </a>
         </li>
-        <li class="nav-item" onClick={() => handlerMsgErr()}>
-          <a class="nav-link" href="#">
-            <i class="nav-icon cil-speedometer"></i> Dashboard
-            <span class="badge bg-primary">NEW</span>
+        <li className="nav-item" onClick={() => handlerMsgErr()}>
+          <a className="nav-link" href="/#">
+            <i className="nav-icon cil-speedometer"></i> Dashboard
+            <span className="badge bg-primary">NEW</span>
           </a>
         </li>
-        <li class="nav-item nav-group" onClick={() => handlerMsgErr()}>
-          <a class="nav-link nav-group-toggle" href="#">
-            <i class="nav-icon cil-puzzle"></i> Nav dropdown
+        <li className="nav-item nav-group" onClick={() => handlerMsgErr()}>
+          <a className="nav-link nav-group-toggle" href="/#">
+            <i className="nav-icon cil-puzzle"></i> Nav dropdown
           </a>
-          <ul class="nav-group-items">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="nav-icon cil-puzzle"></i> Nav dropdown item
+          <ul className="nav-group-items">
+            <li className="nav-item">
+              <a className="nav-link" href="/#">
+                <i className="nav-icon cil-puzzle"></i> Nav dropdown item
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="nav-icon cil-puzzle"></i> Nav dropdown item
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                <i className="nav-icon cil-puzzle"></i> Nav dropdown item
               </a>
             </li>
           </ul>
         </li>
-        <li class="nav-item mt-auto">
+        <li className="nav-item mt-auto">
           <a
-            class="nav-link nav-link-success"
+            className="nav-link nav-link-success"
             href="https://www.linkedin.com/in/marcodeluca-dw/"
           >
-            <i class="nav-icon cil-cloud-download"></i> LinkedIn
+            <i className="nav-icon cil-cloud-download"></i> LinkedIn
           </a>
         </li>
-        <li class="nav-item">
+        <li className="nav-item">
           <a
-            class="nav-link nav-link-danger"
+            className="nav-link nav-link-danger"
             href="https://github.com/antondelu"
           >
-            <i class="nav-icon cil-layers"></i> GitHub
+            <i className="nav-icon cil-layers"></i> GitHub
           </a>
         </li>
       </ul>
-      <button class="sidebar-toggler" type="button"></button>
+      <button className="sidebar-toggler" type="button"></button>
     </div>
   );
 };

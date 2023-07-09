@@ -13,7 +13,7 @@ export const Chart = () => {
           </div>
           <div className="card-body d-flex justify-content-center align-items-center">
             <div>
-              <img src="/chart.JPG" alt="" />
+              <img src="/chart.jpg" alt="" />
             </div>
           </div>
           <div className="card-footer small text-muted">
@@ -29,7 +29,7 @@ export const Chart = () => {
               </div>
               <div className="card-body d-flex justify-content-center align-items-center">
                 <div>
-                  <img src="/bar-chart.JPG" alt="" />
+                  <img src="/bar-chart.jpg" alt="" />
                 </div>
               </div>
               <div className="card-footer small text-muted">
@@ -45,7 +45,7 @@ export const Chart = () => {
               </div>
               <div className="card-body d-flex justify-content-center align-items-center">
                 <div>
-                  <img src="/pie-chart.JPG" alt="" />
+                  <img src="/pie-chart.jpg" alt="" />
                 </div>
               </div>
               <div className="card-footer small text-muted">

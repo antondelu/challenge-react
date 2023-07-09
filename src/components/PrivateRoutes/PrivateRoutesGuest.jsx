@@ -2,7 +2,7 @@ import { Navigate, Outlet } from "react-router-dom";
 import { useContext } from "react";
 import { InitialContext } from "../Context/Context";
 
-function ProtectedRouteGuest({ redirectPath = "/login" }) {
+function ProtectedRouteGuest({ redirectPath = "/" }) {
   const { email } = useContext(InitialContext);
 
   if (email !== "invitado@mevuelo.com") {

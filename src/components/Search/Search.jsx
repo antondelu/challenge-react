@@ -10,7 +10,6 @@ export const Search = ({ alertFilter, setAlertFilter }) => {
     const search = alerts.filter(
       (search) => search.name.toUpperCase() === userSearch.toUpperCase()
     );
-
     setAlertFilter(search);
   }
   return (
