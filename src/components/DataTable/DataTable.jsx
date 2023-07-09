@@ -15,7 +15,7 @@ export const DataTable = () => {
   function updateState(id) {
     const element = alerts.map((alert) => {
       if (alert.id == id) {
-        alert.estado = !alert.estado;
+        alert.state = !alert.state;
       }
       return alert;
     });
@@ -61,8 +61,8 @@ export const DataTable = () => {
                   <tr>
                     <td>{alert.id}</td>
                     <td>{alert.name}</td>
-                    <td>{alert.fuenteMetrica}</td>
-                    <td>{alert.tipoMetrica}</td>
+                    <td>{alert.metricFont}</td>
+                    <td>{alert.metricType}</td>
                     {alert.estado ? (
                       <td className="active">Activo</td>
                     ) : (
@@ -93,8 +93,8 @@ export const DataTable = () => {
                   <tr>
                     <td>{alert.id}</td>
                     <td>{alert.name}</td>
-                    <td>{alert.fuenteMetrica}</td>
-                    <td>{alert.tipoMetrica}</td>
+                    <td>{alert.metricFont}</td>
+                    <td>{alert.metricType}</td>
                     {alert.estado ? (
                       <td className="active">Activo</td>
                     ) : (

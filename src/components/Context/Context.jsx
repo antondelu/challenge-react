@@ -21,7 +21,7 @@ export const ProviderContextComponent = ({ children }) => {
   useEffect(() => {
     let counter = 0;
     for (let alert of alerts) {
-      if (alert.estado) {
+      if (alert.state) {
         counter++;
       }
       setActiveAlertsCount(counter);
