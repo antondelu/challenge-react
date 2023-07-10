@@ -26,7 +26,7 @@ export const Search = ({ alertFilter, setAlertFilter }) => {
       >
         <Form.Control
           type="search"
-          placeholder="Ingresar nombre de alerta"
+          placeholder="Ingresar nombre de alerta o ID"
           className="me-2 inputSearch"
           aria-label="Search"
           onChange={(e) => filterSearchUser(e.target.value)}

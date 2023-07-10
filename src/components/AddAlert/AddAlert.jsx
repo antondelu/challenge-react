@@ -12,11 +12,10 @@ export const AddAlert = () => {
   const [name, setName] = useState("");
   const [metricFont, setMetricFont] = useState("");
   const [metricType, setMetricType] = useState("");
-  const [state, setState] = useState("");
+  const [state, setState] = useState();
 
   const MySwal = withReactContent(Swal);
   const { alerts, setAlerts } = useContext(InitialContext);
-  const URL = "https://apimocha.com/mevueloapi/alerts";
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -39,31 +38,33 @@ export const AddAlert = () => {
   }
 
   function createAlert() {
-    axios
-      .post(`${URL}/alerts`, {
-        data: {
-          name: name,
-          metricFont: metricFont,
-          metricType: metricType,
-          state: state,
-        },
-      })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.error(
-          "Error en la creacion de alerta: " + " " + error.response.data
-        );
-      });
+    // const URL = "https://apimocha.com/mevueloapi/alerts";
+    // axios
+    //   .post(`${URL}/alerts`, {
+    //     data: {
+    //       name: name,
+    //       metricFont: metricFont,
+    //       metricType: metricType,
+    //       state: state,
+    //     },
+    //   })
+    //   .then((response) => {
+    //     console.log(response);
+    //   })
+    //   .catch((error) => {
+    //     console.error(
+    //       "Error en la creacion de alerta: " + " " + error.response.data
+    //     );
+    //   });
+
     const addAlert = [
       ...alerts,
       {
-        id: 1,
+        id: Math.floor(Math.random() * 60),
         name: name,
         metricFont: metricFont,
-        metricType: setMetricType,
-        state: state,
+        metricType: metricType,
+        state: state == "1" ? true : false,
       },
     ];
     alertCreate();
@@ -114,15 +115,15 @@ export const AddAlert = () => {
                 }}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Estado</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Activo/Pausado"
-                autoFocus
-                onChange={(e) => setState(e.target.value)}
-              />
-            </Form.Group>
+            <Form.Select
+              onChange={(e) => {
+                setState(e.target.value);
+              }}
+            >
+              <option>Seleccionar..</option>
+              <option value={1}>Activo</option>
+              <option value={2}>Pausado</option>
+            </Form.Select>
           </Form>
         </Modal.Body>
         <Modal.Footer>

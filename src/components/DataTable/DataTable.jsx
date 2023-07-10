@@ -63,7 +63,7 @@ export const DataTable = () => {
                     <td>{alert.name}</td>
                     <td>{alert.metricFont}</td>
                     <td>{alert.metricType}</td>
-                    {alert.estado ? (
+                    {alert.state ? (
                       <td className="active">Activo</td>
                     ) : (
                       <td className="paused">Pausado</td>
@@ -73,7 +73,7 @@ export const DataTable = () => {
                       className="updateButton"
                       onClick={() => updateState(alert.id)}
                     >
-                      Pausar
+                    {alert.state ? <>Pausar</>: <>Activar</>}
                     </Button>
                     <Button
                       variant="danger"
@@ -95,7 +95,7 @@ export const DataTable = () => {
                     <td>{alert.name}</td>
                     <td>{alert.metricFont}</td>
                     <td>{alert.metricType}</td>
-                    {alert.estado ? (
+                    {alert.state ? (
                       <td className="active">Activo</td>
                     ) : (
                       <td className="paused">Pausado</td>
@@ -105,7 +105,7 @@ export const DataTable = () => {
                       className="updateButton"
                       onClick={() => updateState(alert.id)}
                     >
-                      Pausar
+                      {alert.state ? <>Pausar</>: <>Activar</>}
                     </Button>
                     <Button
                       variant="danger"
