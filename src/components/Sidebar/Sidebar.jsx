@@ -12,18 +12,18 @@ export const SideNavbar = () => {
           </a>
         </li>
         <li className="nav-item" onClick={() => handlerMsgErr()}>
-          <a className="nav-link" href="/#">
+          <a className="nav-link" href="#">
             <i className="nav-icon cil-speedometer"></i> Dashboard
             <span className="badge bg-primary">NEW</span>
           </a>
         </li>
         <li className="nav-item nav-group" onClick={() => handlerMsgErr()}>
-          <a className="nav-link nav-group-toggle" href="/#">
+          <a className="nav-link nav-group-toggle" href="#">
             <i className="nav-icon cil-puzzle"></i> Nav dropdown
           </a>
           <ul className="nav-group-items">
             <li className="nav-item">
-              <a className="nav-link" href="/#">
+              <a className="nav-link" href="#">
                 <i className="nav-icon cil-puzzle"></i> Nav dropdown item
               </a>
             </li>
