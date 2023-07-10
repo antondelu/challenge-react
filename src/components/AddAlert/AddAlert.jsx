@@ -116,6 +116,7 @@ export const AddAlert = () => {
                 }}
               />
             </Form.Group>
+            <Form.Label>Estado</Form.Label>
             <Form.Select
               onChange={(e) => {
                 setState(e.target.value);
