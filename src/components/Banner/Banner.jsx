@@ -1,4 +1,4 @@
-import "./banner.css"
+import "./banner.css";
 export const Banner = () => {
   return (
     <div className="container-fluid px-4">

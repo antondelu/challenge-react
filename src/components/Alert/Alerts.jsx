@@ -1,4 +1,4 @@
-import './alert.css'
+import "./alert.css";
 import { useContext } from "react";
 import { InitialContext } from "../Context/Context";
 import Button from "react-bootstrap/Button";
@@ -34,14 +34,18 @@ export const AlertsFiltered = ({ alert }) => {
         )}
         <Button
           variant="outline-primary"
-          className={email === "invitado@mevuelo.com" ? "notButton" : "updateButton"}
+          className={
+            email === "invitado@mevuelo.com" ? "notButton" : "updateButton"
+          }
           onClick={() => updateState(alert.id)}
         >
           {alert.state ? <>Pausar</> : <>Activar</>}
         </Button>
         <Button
           variant="danger"
-          className={email === "invitado@mevuelo.com" ? "notButton" : "deleteButton"}
+          className={
+            email === "invitado@mevuelo.com" ? "notButton" : "deleteButton"
+          }
           onClick={() => alertDelete(alert.id, deleteAlert)}
         >
           Borrar

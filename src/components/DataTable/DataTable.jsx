@@ -11,15 +11,16 @@ import { Banner } from "../Banner/Banner";
 export const DataTable = () => {
   const [alertFilter, setAlertFilter] = useState([]);
   const { alerts, email } = useContext(InitialContext);
-  console.log(email);
 
-  /*Esta función implementa el método DELETE y, aunque no hay una interacción visual
-    debido a la falta de una base de datos, se puede descomentar y verificar que funciona correctamente.
-    en la consola, se mostrará un status 200 para confirmar su funcionamiento.
-    (No olvidar comentar la funcion de arriba que lleva el mismo nombre)
+
+  /*
+  Esta función implementa el método DELETE y, aunque no hay una interacción visual,se puede descomentar y verificar que funciona correctamente.
+  en la consola, se mostrará un status 200 para confirmar su funcionamiento.
+  (No olvidar comentar la funcion en Alerts.jsx que lleva el mismo nombre)
   */
+
   // function deleteAlert(id) {
-  //  const URL = "https://apimocha.com/mevueloapi/alerts";
+  //   const URL = "https://apimocha.com/mevueloapi/alerts";
   //   axios
   //     .delete(`${URL}/${id}`)
   //     .then((response) => console.log("status:" + " " + response.status))
@@ -45,7 +46,6 @@ export const DataTable = () => {
             <th>Estado</th>
           </tr>
         </thead>
-
         {alertFilter.length !== 0
           ? alertFilter.map((alert) => {
               return <AlertsFiltered alert={alert} />;

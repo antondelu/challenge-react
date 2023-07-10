@@ -4,21 +4,21 @@ import { useNavigate } from "react-router-dom";
 import { InitialContext } from "../Context/Context";
 
 export const Button = () => {
-  const {email}=useContext(InitialContext);
+  const { email } = useContext(InitialContext);
   const navigate = useNavigate();
 
-  const login =()=>{
+  const login = () => {
     const emailRoutes = {
-      'admin@mevuelo.com' : '/home',
-      'invitado@mevuelo.com': '/homeguest'
-    }
+      "admin@mevuelo.com": "/home",
+      "invitado@mevuelo.com": "/homeguest",
+    };
     const route = emailRoutes[email];
-    if(route){
-      navigate(route)
-    }else{
+    if (route) {
+      navigate(route);
+    } else {
       return;
     }
-  }
+  };
   return (
     <div className="contentBtn">
       <button className="btnLogin" onClick={login}>

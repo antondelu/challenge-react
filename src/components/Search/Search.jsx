@@ -17,7 +17,7 @@ export const Search = ({ alertFilter, setAlertFilter }) => {
   }
   return (
     <>
-      <AddAlert/>
+      <AddAlert />
       <Form
         className="d-flex contentSearch"
         onSubmit={(e) => {

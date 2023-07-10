@@ -5,15 +5,14 @@ import { NavbarTop } from "../../components/Navbar/Navbar";
 import { SideNavbar } from "../../components/Sidebar/Sidebar";
 
 export const HomeAdmin = () => (
-    <>
-      <NavbarTop />
-      <div className="home">
-        <SideNavbar />
-        <div className="charts">
-          <Chart />
-          <DataTable />
-        </div>
+  <>
+    <NavbarTop />
+    <div className="home">
+      <SideNavbar />
+      <div className="charts">
+        <Chart />
+        <DataTable />
       </div>
-    </>
-  );
-
+    </div>
+  </>
+);

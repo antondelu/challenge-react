@@ -8,18 +8,21 @@ export const NavbarTop = () => {
   const [navbarBackground, setNavbarBackground] = useState(false);
   const { activeAlertsCount } = useContext(InitialContext);
 
-    //Esta funcion cambia el fondo del navbar transparente a oscuro
-    const changeBackground = () => {
-      if (window.scrollY >= 180) {
-        setNavbarBackground(true);
-      } else {
-        setNavbarBackground(false);
-      }
-    };
-    window.addEventListener("scroll", changeBackground);
+  //Esta funcion cambia el fondo del navbar transparente a oscuro al hacer scroll
+  const changeBackground = () => {
+    if (window.scrollY >= 180) {
+      setNavbarBackground(true);
+    } else {
+      setNavbarBackground(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
 
   return (
-    <Navbar colorScheme="light" className={navbarBackground ? "active navbar fixed-top" : "fixed-top"}>
+    <Navbar
+      colorScheme="light"
+      className={navbarBackground ? "active navbar fixed-top" : "fixed-top"}
+    >
       <CContainer fluid fixed="top">
         <CNavbarBrand href="#">
           <img src="../logo-mevuelo.jpg" alt="" width="45" height="48" />

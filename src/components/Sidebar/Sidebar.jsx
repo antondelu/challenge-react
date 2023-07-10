@@ -1,4 +1,4 @@
-import './sidebar.css'
+import "./sidebar.css";
 import React from "react";
 import handlerMsgErr from "../SweetAlerts/handlerMsgErr";
 
@@ -43,10 +43,7 @@ export const SideNavbar = () => {
           </a>
         </li>
         <li className="nav-item">
-          <a
-            className="nav-link nav-link-danger"
-            href="/"
-          >
+          <a className="nav-link nav-link-danger" href="/">
             <i className="nav-icon cil-layers"></i> Ir al login
           </a>
         </li>
