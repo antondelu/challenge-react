@@ -87,6 +87,7 @@ export const AddAlert = () => {
               <Form.Control
                 type="text"
                 placeholder="Alerta 16"
+                pattern="[A-Za-z0-9]+"
                 autoFocus
                 onChange={(e) => {
                   setName(e.target.value);

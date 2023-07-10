@@ -45,9 +45,9 @@ export const SideNavbar = () => {
         <li className="nav-item">
           <a
             className="nav-link nav-link-danger"
-            href="https://github.com/antondelu"
+            href="/"
           >
-            <i className="nav-icon cil-layers"></i> GitHub
+            <i className="nav-icon cil-layers"></i> Ir al login
           </a>
         </li>
       </ul>
